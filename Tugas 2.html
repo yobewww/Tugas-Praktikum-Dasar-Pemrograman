@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Pendaftaran</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+      }
+      h2 {
+        font-size: 28px;
+        color: black;
+      }
+      label {
+        font-size: 18px;
+        font-weight: bold;
+      }
+      input,
+      textarea,
+      select {
+        font-size: 16px;
+        padding: 5px;
+        margin: 5px 0;
+      }
+      input[type="submit"],
+      input[type="reset"] {
+        font-size: 16px;
+        padding: 8px 15px;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Form Pendaftaran</h2>
+    <form>
+      <label>Nama Depan :</label>
+      <input type="text" name="namadepan" /><br /><br />
+
+      <label>Nama Belakang :</label>
+      <input
+        type="text"
+        name="namabelakang"
+        value="nama belakang anda"
+      /><br /><br />
+
+      <label>Password :</label>
+      <input type="password" name="password" /><br /><br />
+
+      <label>Alamat :</label><br />
+      <textarea name="alamat" rows="4" cols="30"></textarea><br /><br />
+
+      <label>Olahraga Favorit :</label><br />
+      <input type="checkbox" name="olahraga" value="Sepakbola" /> Sepakbola
+      <input type="checkbox" name="olahraga" value="Bulu Tangkis" /> Bulu
+      Tangkis <input type="checkbox" name="olahraga" value="Tenis" /> Tenis
+      <br /><br />
+
+      <label>Jenis Kelamin :</label><br />
+      <input type="radio" name="jk" value="Pria" /> Pria
+      <input type="radio" name="jk" value="Wanita" /> Wanita <br /><br />
+
+      <label>Olahraga :</label>
+      <select name="olahraga">
+        <option value="Sepakbola">Sepakbola</option>
+        <option value="Bulu Tangkis">Bulu Tangkis</option>
+        <option value="Tenis" selected>Tenis</option>
+      </select>
+      <br /><br />
+
+      <input type="submit" value="Save" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>
